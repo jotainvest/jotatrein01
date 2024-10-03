@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+/*-------------CLASSES PONTUAIS-------------*/
+.noWrap{white-space: nowrap;}
+
+.highlight, .highlight-2, .highlight-3{font-family: inherit;}
+.highlight{color: var(--mainColor);}
+.highlight-2{color: var(--secundaryColor);}
+.highlight-3{background: var(--thirdColor);}
+
+.center{text-align: center;}
+
+.hidden{display: none !important;}
+/*-------------/CLASSES PONTUAIS-------------*/
+
+/*------------------NAV DE FACEBOOK------------------*/
+.boxNav{
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  border-bottom: solid 1px #333;
+}
+
+.boxNav .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxNav .container a{
+  flex-grow: 0;
+  padding: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+}
+
+.boxNav .container a:hover{color: var(--mainColor);}
+/*------------------/NAV DE FACEBOOK------------------*/

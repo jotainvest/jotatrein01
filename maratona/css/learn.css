@@ -1,0 +1,41 @@
+.learn{
+  background: #f9f9f9;
+  color: #000;
+}
+
+.learnList{
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.learnList li{
+  padding-left: 35px;
+  position: relative;
+}
+
+.learnList li::before{
+  content: "";
+  width: 14px;
+  height: 8px;
+  border-left: solid 3px var(--secundaryColor);
+  border-bottom: solid 3px var(--secundaryColor);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 2px;
+}
+
+.learnList li ul{margin-top: 30px;}
+
+.learnList li ul li{
+  padding-left: 0;
+  list-style: none;
+}
+
+.learnList li ul li::before{
+  left: -35px;
+  border-left: solid 3px var(--thirdColor);
+  border-bottom: solid 3px var(--thirdColor);
+}

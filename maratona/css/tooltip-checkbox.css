@@ -1,0 +1,31 @@
+.tCheckbox{
+  width: 100%;
+  max-width: 190px;
+  font-size: 0.7em;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+  background: #333;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTUgMTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE1IDE1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0NDMDAzMzt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNy41LDBDMy40LDAsMCwzLjQsMCw3LjVTMy40LDE1LDcuNSwxNVMxNSwxMS42LDE1LDcuNVMxMS42LDAsNy41LDB6IE04LjUsMTFjMCwwLjYtMC40LDEtMSwxcy0xLTAuNC0xLTFWNmMwLTAuNiwwLjQtMSwxLTFzMSwwLjQsMSwxVjExeiBNNy41LDRjLTAuNiwwLTEtMC40LTEtMXMwLjQtMSwxLTFsMCwwYzAuNiwwLDEsMC40LDEsMVM4LjEsNCw3LjUsNHoiLz48L2c+PC9zdmc+);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 10px center;
+  padding: 5px 5px 5px 30px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  position: relative;
+  display: none;
+}
+
+.tCheckbox::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #333;
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  transform: rotate(45deg);
+  z-index: -1;
+}

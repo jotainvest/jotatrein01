@@ -1,0 +1,88 @@
+.schedule{
+  background: #f9f9f9;
+  color: #000;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.boxInputsRetractables{text-align: left;}
+.boxInputsRetractables input[type="checkbox"]{display: none;}
+
+.response{
+  cursor: pointer;
+  border: solid 1px var(--secundaryColor);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.response label{
+  display: block;
+  cursor: pointer;
+}
+
+.response label h3{
+  font-weight: var(--fwBolder);
+  padding-right: 30px;
+  margin: 0;
+  position: relative;
+}
+
+.response label h3::before, .response label h3::after{
+  content: "";
+  width: 2px;
+  height: 18px;
+  background: var(--secundaryColor);
+  position: absolute;
+  top: 20%;
+  right: 14px;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  display: block;
+}
+
+.response label h3::after{
+  right: 15px;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.response div{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.response div ul, .response div p{
+  color: var(--optionalTextColor);
+  padding: 0;
+  position: relative;
+}
+
+.response div ul li{list-style: none;}
+
+.boxInputsRetractables input[type="checkbox"]:checked + .response label{margin-bottom: calc(var(--defaultSpace) / 2);}
+.boxInputsRetractables input[type="checkbox"]:checked + .response label h3::before{transform: translateY(-50%) rotate(90deg);}
+
+.boxInputsRetractables input[type="checkbox"]:checked + .response div{
+  height: auto;
+  opacity: 1;
+  overflow: visible;
+  padding-left: 25px;
+  position: relative;
+}
+
+.boxInputsRetractables input[type="checkbox"]:checked + .response div::before{
+  content: "";
+  width: 2px;
+  height: calc(100% - (var(--defaultSpace) / 1.8));
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  background: var(--optionalTextColor);
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px){
+  .response label h3::before, .response label h3::after{top: 40%;}
+}

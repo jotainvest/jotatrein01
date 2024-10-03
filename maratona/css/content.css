@@ -1,0 +1,28 @@
+.content{
+  color: #fff;
+  text-align: center;
+  background: var(--bgDefault);
+  position: relative;
+}
+
+.content::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: inherit;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+
+.content .btOpenForm{margin: 0 auto;}
+
+@media only screen and (min-width: 768px){
+  .content::after{
+    width: 40px;
+    height: 40px;
+    bottom: -20px;
+  }
+}

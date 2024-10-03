@@ -1,0 +1,45 @@
+.testimonials{
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.carousel{
+  width: 100%;
+  display: flex;
+  /* align-items: stretch; */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: auto;
+  position: relative;
+  margin: 0 auto var(--defaultSpace);
+}
+
+.card{
+  width: 100%;
+  margin: 0 1.2rem 0 0;
+  position: relative;
+  transition-timing-function: linear;
+  overflow: visible;
+  /* transition: 10s; */
+}
+
+.card img{
+  width: 240px;
+  border: solid 1px var(--mainColor);
+  border-radius: var(--defaultSpace);
+  margin: 0 auto;
+  display: table;
+}
+
+@media only screen and (min-width: 375px){
+  .card img{width: 260px;}
+}
+
+@media only screen and (min-width: 1000px){
+  .carousel{margin: 0 auto 3rem;}
+}

@@ -1,0 +1,23 @@
+.numbers{
+  background: var(--thirdColor);
+  color: #fff;
+}
+
+.boxNumbers{
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.boxNumbers .flex{margin-bottom: 3rem;}
+
+.boxNumbers .bigNumber{
+  width: 100%;
+  color: var(--mainColor);
+  font-weight: var(--fwBolder);
+  margin-right: 2rem;
+}
+
+.boxNumbers .flex h3{
+  text-align: left;
+  margin: 0;
+}

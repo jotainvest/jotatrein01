@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jota Treinamentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2a2a2a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 120px; /* Limite de largura da logo */
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            padding: 100px 20px;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Imagem de banner para desktop */
+        .banner-desktop {
+            background-image: url('./img/bg-desk.jpg');
+        }
+
+        /* Imagem de banner para mobile */
+        .banner-mobile {
+            background-image: url('./img/bg-mobi.jpg');
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            max-width: 50%; /* Largura máxima de 50% no desktop */
+            margin: 0;
+            padding: 20px;
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        .banner h1 {
+            font-size: 2.5em;
+            margin: 0 0 20px;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .banner a {
+            padding: 10px 20px;
+            background-color: #116e5e; /* Cor do botão ajustada */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        /* Para ajustar o alinhamento e largura em dispositivos móveis */
+        @media (max-width: 768px) {
+            .banner-content {
+                text-align: center; /* No celular, o texto volta a ser centralizado */
+                max-width: 100%; /* Largura total no celular */
+            }
+            /* Define a imagem de fundo para mobile */
+            .banner {
+                background-image: url('./img/bg-mobi.jpg');
+            }
+        }
+
+        /* Define a imagem de fundo para desktop */
+        @media (min-width: 769px) {
+            .banner {
+                background-image: url('./img/bg-desk.jpg');
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .course-item:hover {
+            transform: scale(1.05);
+        }
+
+        .course-item img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .course-item h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .course-item p {
+            color: #666;
+        }
+
+        .course-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .course-item a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a2a2a;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer img {
+            max-width: 80px; /* Limite de largura da logo no rodapé */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://publifile.s3.amazonaws.com/marca/logo.svg" alt="Logo">
+</header>
+
+<!-- Banner Section -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>O espaço de estudos para seu crescimento profissional e pessoal</h1>
+        <p>Uma plataforma de aprendizado totalmente focada em entregar os melhores cursos, treinamentos e formações para você.</p>
+        <a href="#cursos">Saiba mais</a>
+    </div>
+</section>
+
+<div class="container" id="cursos">
+    <div class="course-grid">
+        <!-- Curso 1 -->
+        <div class="course-item">
+            <img src="img/1.png" alt="Curso 1">
+            <h2>Método Marca Forte</h2>
+            <p>Sua oportunidade de aprender empreender no mercado de suplemento alimentar criando uma marca forte.</p>
+            <a href="maratona/index.html">Saiba mais</a>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="course-item">
+            <img src="img/meta.jpg" alt="Curso 2">
+            <h2>Meta Ads avançado</h2>
+            <p>O treinamento que você precisa para iniciar sua jornada no marketing digital, através dos anúncios no facebook e instagram</p>
+            <a href="https://chk.eduzz.com/1557345">Saiba mais</a>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="course-item">
+            <img src="img/smart.png" alt="Curso 3">
+            <h2>Smart Lounch</h2>
+            <p>Ensinamos a forma que a nossa equipe faz micro lançamentos com baixo investimento para vender os nossos cursos e treinamentos</p>
+            <a href="https://lp.jotatreinamentos.com.br/lsl02/">Saiba mais</a>
+        </div>
+
+
+        <!-- Curso 4 -->
+        <div class="course-item">
+            <img src="img/2.png" alt="Curso 2">
+            <h2>Palavras do Mestre</h2>
+            <p>O treinamento que você precisa para iniciar sua jornada no marketing digital, através dos anúncios no facebook e instagram</p>
+            <a href="https://lp1.jotainvestimentos.com/palavras/?src=banner-footer">Saiba mais</a>
+        </div>
+
+        <!-- Curso 5 -->
+        <div class="course-item">
+            <img src="img/3.png" alt="Curso 3">
+            <h2>Primeiras Vendas Online</h2>
+            <p>Ensinamos a forma que a nossa equipe faz micro lançamentos com baixo investimento para vender os nossos cursos e treinamentos</p>
+            <a href="https://lp.jotatreinamentos.com.br/lsl02/">Saiba mais</a>
+        </div>
+
+        <!-- Curso 6 -->
+        <div class="course-item">
+            <img src="img/meta.jpg" alt="Curso 2">
+            <h2>10X Conversions</h2>
+            <p>O treinamento que você precisa para iniciar sua jornada no marketing digital, através dos anúncios no facebook e instagram</p>
+            <a href="https://chk.eduzz.com/1660204" target="_blank">Saiba mais</a>
+        </div>
+
+    
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; <span id="year"></span> - Jota Treinamentos</p>
+    <img src="https://publifile.s3.amazonaws.com/marca/logo.svg" alt="Logo no Rodapé">
+</footer>
+
+<script>
+    // Atualiza automaticamente o ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
