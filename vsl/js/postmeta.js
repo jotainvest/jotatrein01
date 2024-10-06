@@ -111,7 +111,7 @@ function onPlayerReady() {
  var currentTimeYT = window.setInterval(function() {
  theTime = player.getCurrentTime();
  // console.log(theTime)
- if (theTime > 200) {
+ if (theTime > 4200) {
  ctaRed.style.display = 'block';
  // console.log('Passou de 1 min.')
  } else {
