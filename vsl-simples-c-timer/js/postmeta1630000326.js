@@ -6328,7 +6328,7 @@
     }, 1e3);
   }
   var checkout = "https://chk.eduzz.com/2325562?src=pe111-pizza=926",
-    copyReadVersion = "https://sl.empiricus.com.br/p/pe150t-trial/",
+    copyReadVersion = "#",
     adjustUrlSearch,
     getLocationSearch = window.location.search;
   "" == getLocationSearch
