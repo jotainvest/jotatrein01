@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Valinor - Seu Negócio Lucrativo</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto;
+            max-width: 750px;
+        }
+
+        .main-heading {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c2c2c;
+            margin: 20px 0;
+        }
+
+        .sub-heading {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .section-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #2c2c2c;
+        }
+
+        /* Estilo para o botão de compra */
+        .buy-button {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #000;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 15px 30px;
+            width: 70%;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        /* Animação contínua do botão */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 26px; /* Tamanho ajustado para celulares */
+            }
+          
+      img {
+            width: 90%;
+         
+      }
+            .buy-button {
+                width: 100%; /* Botão ocupa toda a largura em dispositivos menores */
+            }
+}
+
+/* BOTAO VERMELHO */
+ 
+.call_to_action_red {
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 22px 12px;
+  margin: 8px auto 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #d4af37 0%, #bb0e31 100%);
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.call_to_action_red:hover {
+  color: #fff;
+  background-image: linear-gradient(to bottom, #bb0e31 0%, #e54747 100%)
+}
+
+    .cta-red {
+  display: block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 5px;
+  background: linear-gradient(268deg, #d4af37, #daa520, #ffd700, #b29146);
+  background-size: 800% 800%;
+  -webkit-animation: cta 6s ease infinite;
+  -moz-animation: cta 6s ease infinite;
+  -o-animation: cta 6s ease infinite;
+  animation: cta 6s ease infinite;
+  text-decoration: underline;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75)
+}
+
+.cta-red:hover {
+  background-color: #b29146 !important;
+  background-image: none !important;
+  color: #fff !important
+}
+
+.cta-red:focus {
+  background-color: #b29146 !important;
+  color: #fff !important;
+  background-image: none !important
+}
+
+.cta-red:active {
+  background-color: #b29146 !important;
+  color: #fff !important;
+  background-image: none !important
+}
+
+/* REDUTOR DE BOTAO */
+.apx {
+      max-width: 700px;
+      width: 100%;
+}
+
+@-webkit-keyframes cta {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 51%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes cta {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 51%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-o-keyframes cta {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 51%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes cta {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 51%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- <div class="header">
+            <img src="https://eltonfilho.com/wp-content/uploads/2024/03/Valinor.jpeg.webp" alt="Projeto Valinor Banner">
+        </div> -->
+
+        <h1 align="center" class="main-heading">A carteira de cripto com alto potencial de valorização</h1>
+      
+      <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/NZK23RRZsoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div> 
+      
+        <p align="center" class="sub-heading">Acesse a lista de criptomoedas com potencial para disparar 3.000% em 14 meses  por apenas R$10 / mês (últimos dias).</p>
+      
+      <p>Você vai ter acesso a criptomoeda que acredito que pode valorizar 3.000% nos próximos 14 meses e ainda toda a minha carteira de investimentos em cripto</p>
+      
+      <p>O puro Skin in the Game </p>
+      
+        <h2>O que você vai receber ao assinar?</h2>
+      <p>✅ Lista das moedas com alto potencial de crescimento.</p>
+
+<p>✅ Nossa Carteira de investimentos em cripto.</p>
+
+<p>✅ Plantões para tirar dúvidas mensais.</p>
+<p>✅  Aulas ensinando tudo que precisa para iniciar no mercado</p>
+
+<h2><strong>Vou compartilhar as criptos que estou comprando para mim.</strong></h2>
+
+<ul>
+	<li>Como manter seu neg&oacute;cio enxuto (e at&eacute; trabalhar para sempre sem equipe, se voc&ecirc; quiser) e ter lucros mensais superiores a 85%.</li>
+	<li>Estrat&eacute;gias para precisar de menos de 4 horas por dia para fazer seu neg&oacute;cio passar dos 6 d&iacute;gitos mensais.</li>
+	<li>Uma mentalidade totalmente oposta a 99% do que voc&ecirc; v&ecirc; na internet e que vai te ajudar a manter a sanidade em meio a um mundo de loucura.</li>
+</ul>
+
+<h2>Pode cancelar a qualquer momento?</h2>
+
+<p>Sim. Voc&ecirc; poder&aacute; cancelar a sua assinatura a qualquer momento, basta mandar uma mensagem para o Whatsapp do meu Suporte e meu time far&aacute; o cancelamento.</p>
+
+<p>Contudo a assinatura se encerrar&aacute; somente ao final do per&iacute;odo de um ano, a contar da data de assinatura.</p>
+
+<h2>❌ N&atilde;o &eacute; poss&iacute;vel reativar a sua assinatura no futuro.</h2>
+
+<p>O motivo &eacute; simples: eu n&atilde;o acredito em resultado de curto prazo. Apenas os perseverantes v&atilde;o aproveitar de verdade todo o conte&uacute;do das Cartas.</p>
+
+<p>Portanto, ao cancelar sua assinatura, voc&ecirc; entra para a minha &nbsp;blacklist e n&atilde;o poder&aacute; mais voltar a assinar.</p>
+
+<h2>Clique no bot&atilde;o abaixo e realize sua assinatura.</h2>
+
+<p>Ap&oacute;s o pagamento, o acesso ser&aacute; enviado automaticamente no seu e-mail, ou, se j&aacute; &eacute; aluno do Condado, basta acessar a plataforma com seus dados e procurar pelas Cartas ao Condado.</p>
+
+
+     <!--<div align="center"> <img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/7ba73aaa-3da9-4cf1-abf2-ccc85dea5875/uid_5564604/Agrupar-1-768x635-1.webp"></div> -->
+      
+    
+       <!-- <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/_ZZjEsejD2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div> ---
+
+        <p class="highlight-text">Se você é minimamente inteligente já deve ter notado isso também:</p>
+        <p class="section-text">Já reparou que <strong>todo dia aparece alguém com uma nova estratégia “bombástica”</strong> e um método “definitivo” (mais um!) de como vender o seu produto ou serviço e ganhar dinheiro na internet?</p> -->
+        
+        <!-- Seção do botão de compra -->
+        <div class="button-container">
+          <p><a class="cta-red ck-texto apx" href="https://pay.llcheckout.com/Essencial/offer/B9CCB52B-57BB-425B-904E-9CAC5A4A3740">ASSINE AGORA</a></p>
+         
+        </div>
+    </div>
+
+  
+  <div align="center">
+    <img src-"https://eltonfilho.com/wp-content/uploads/2023/07/25-e1690819932899.png.webp">
+  </div>
+    <!-- Rodapé -->
+    <footer>
+        © 2024 Jota Treinamentos. Todos os direitos reservados. CNPJ: 40.734.313/0001-98<br>
+        <a href="https://seusite.com/politica-de-privacidade">Política de Privacidade</a>
+    </footer>
+
+</body>
+</html>
